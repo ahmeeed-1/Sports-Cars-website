@@ -3,83 +3,105 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Sports Cars & Supercars | Ferrari, Porsche, McLaren</title>
+  <title>Velocity | Sports Cars & Supercars</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-  <header>
-    <div class="container">
-      <h1>Sports Cars & Supercars</h1>
-      <p>Discover the pinnacle of automotive engineering, performance, and design featuring legendary icons like Ferrari, Porsche, and McLaren.</p>
-    </div>
-  </header>
-
-  <main class="container">
-    <section class="section">
-      <div class="section-title">
-        <h2>Featured Supercars</h2>
-        <p>Three masterclasses in aerodynamics, acceleration, and heritage.</p>
+  <main id="home">
+    <section class="hero container">
+      <div class="hero-copy">
+        <p class="eyebrow">Italian soul · German precision</p>
+        <h1>DRIVE THE<br><span>IMPOSSIBLE.</span></h1>
+        <p class="hero-text">A visual garage for the machines that turn engineering into emotion. Meet the icons, compare the details, and discover the supercars defining modern motorsport.</p>
       </div>
+      <div class="hero-badge" aria-label="Performance highlight">
+        <span>V12</span>
+        <small>pure theatre</small>
+      </div>
+    </section>
 
+    <section class="section container" id="cars">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">The collection</p>
+          <h2>Three ways to<br><em>feel alive.</em></h2>
+        </div>
+        <p>From the hand-built drama of Ferrari to Porsche's relentless precision, every line has a reason.</p>
+      </div>
       <div class="car-grid">
         <article class="car-card">
           <div class="car-image">
-            <img src="../images/1.jpg" alt="Ferrari 296 GTB" onerror="this.parentElement.classList.add('image-fallback');this.remove()">
+            <img src="../images/1.jpg" alt="Ferrari sports car" onerror="this.parentElement.classList.add('image-fallback');this.remove()">
+            <span>01</span>
           </div>
           <div class="card-content">
-            <span class="badge">Ferrari · Italy</span>
+            <p class="eyebrow">Ferrari · Italy</p>
             <h3>Ferrari 296 GTB</h3>
-            <p>A mid-rear-engined berlinetta revolutionizing performance with an advanced V6 hybrid engine.</p>
+            <p>A compact hybrid berlinetta with a huge V6 voice and instant electric response.</p>
             <div class="specs">
-              <span>819 Horsepower</span>
-              <span>0–60 in 2.9s</span>
+              <span>819 hp</span>
+              <span>2.9s 0–60</span>
             </div>
           </div>
         </article>
 
-        <article class="car-card">
+        <article class="car-card featured">
           <div class="car-image">
-            <img src="../images/2.jpg" alt="Porsche 911 GT3 RS" onerror="this.parentElement.classList.add('image-fallback');this.remove()">
+            <img src="../images/2.jpg" alt="Porsche sports car" onerror="this.parentElement.classList.add('image-fallback');this.remove()">
+            <span>02</span>
           </div>
           <div class="card-content">
-            <span class="badge">Porsche · Germany</span>
+            <p class="eyebrow">Porsche · Germany</p>
             <h3>Porsche 911 GT3 RS</h3>
-            <p>A pure track-focused masterpiece built with uncompromising aerodynamics and precision handling.</p>
+            <p>A street-legal track weapon where downforce, balance, and a screaming flat-six meet.</p>
             <div class="specs">
-              <span>518 Horsepower</span>
-              <span>0–60 in 3.0s</span>
+              <span>518 hp</span>
+              <span>3.0s 0–60</span>
             </div>
           </div>
         </article>
 
         <article class="car-card">
           <div class="car-image">
-            <img src="../images/3.jpg" alt="McLaren 750S" onerror="this.parentElement.classList.add('image-fallback');this.remove()">
+            <img src="../images/3.jpg" alt="Supercar on a road" onerror="this.parentElement.classList.add('image-fallback');this.remove()">
+            <span>03</span>
           </div>
           <div class="card-content">
-            <span class="badge">McLaren · United Kingdom</span>
+            <p class="eyebrow">Supercar · Future</p>
             <h3>McLaren 750S</h3>
-            <p>Incredible lightness, carbon fibre monocoque construction, and thrilling twin-turbo V8 speed.</p>
+            <p>Featherweight carbon fibre and a twin-turbo V8 make every corner feel like a launch.</p>
             <div class="specs">
-              <span>740 Horsepower</span>
-              <span>0–60 in 2.7s</span>
+              <span>740 hp</span>
+              <span>2.7s 0–60</span>
             </div>
           </div>
         </article>
       </div>
     </section>
 
-    <section class="about-box">
-      <h3>The Art of Supercar Performance</h3>
-      <p>Supercars embody the absolute limits of mechanical power and aerodynamic science. While Ferrari focuses on passionate design with high-revving hybrid powertrains, Porsche defines clinical chassis calibration and everyday reliability, and McLaren pushes the envelope in carbon-fibre lightweight construction.</p>
-      <p>Together, they define the bleeding edge of the automotive industry, paving the way for innovations that eventually trickle down to everyday vehicles.</p>
+    <section class="experience section" id="experience">
+      <div class="container experience-grid">
+        <div>
+          <p class="eyebrow">Beyond numbers</p>
+          <h2>Built for the<br><em>heartbeat.</em></h2>
+        </div>
+        <div class="experience-copy">
+          <p>Supercars are not only fast. They are the feel of a steering wheel, the vibration of a cold start, and the moment a road opens in front of you.</p>
+          <div class="stats">
+            <div><strong>01</strong><span>Choose your line</span></div>
+            <div><strong>02</strong><span>Find your sound</span></div>
+            <div><strong>03</strong><span>Make it yours</span></div>
+          </div>
+        </div>
+      </div>
     </section>
   </main>
 
-  <footer>
+  <footer class="footer">
     <div class="container">
-      <p>Sports Cars & Supercars Showcase. · <a href="../index.html">View Final Project</a></p>
+      <span>VELOCITY<span class="accent">.</span> Built for the bold.</span>
+      <a href="../index.html">View Final Project</a>
     </div>
   </footer>
 
