@@ -5,15 +5,29 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Velocity | Sports Cars & Supercars</title>
   <link rel="stylesheet" href="styles.css">
+  <script defer src="script.js"></script>
 </head>
 <body>
+  <header class="site-header">
+    <nav class="nav container" aria-label="Main navigation">
+      <a class="brand" href="#home">VELOCITY<span>.</span></a>
+      <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
+      <div class="nav-links">
+        <a href="#cars">Cars</a>
+        <a href="#experience">Experience</a>
+        <a href="#selector">Selector</a>
+        <button class="theme-toggle" type="button" aria-label="Toggle light mode">☼</button>
+      </div>
+    </nav>
+  </header>
 
   <main id="home">
     <section class="hero container">
       <div class="hero-copy">
         <p class="eyebrow">Italian soul · German precision</p>
         <h1>DRIVE THE<br><span>IMPOSSIBLE.</span></h1>
-        <p class="hero-text">A visual garage for the machines that turn engineering into emotion. Meet the icons, compare the details, and discover the supercars defining modern motorsport.</p>
+        <p class="hero-text">A visual garage for the machines that turn engineering into emotion. Meet the icons, compare the details, and find the supercar that fits your dream.</p>
+        <a class="button button-primary" href="#cars">Explore the collection <span>↘</span></a>
       </div>
       <div class="hero-badge" aria-label="Performance highlight">
         <span>V12</span>
@@ -31,80 +45,36 @@
       </div>
       <div class="car-grid">
         <article class="car-card">
-          <div class="car-image">
-            <img src="../images/1.jpg" alt="Ferrari sports car" onerror="this.parentElement.classList.add('image-fallback');this.remove()">
-            <span>01</span>
-          </div>
-          <div class="card-content">
-            <p class="eyebrow">Ferrari · Italy</p>
-            <h3>Ferrari 296 GTB</h3>
-            <p>A compact hybrid berlinetta with a huge V6 voice and instant electric response.</p>
-            <div class="specs">
-              <span>819 hp</span>
-              <span>2.9s 0–60</span>
-            </div>
-          </div>
+          <div class="car-image"><img src="images/1.jpg" alt="Ferrari sports car" onerror="this.parentElement.classList.add('image-fallback');this.remove()"><span>01</span></div>
+          <div class="card-content"><p class="eyebrow">Ferrari · Italy</p><h3>Ferrari 296 GTB</h3><p>A compact hybrid berlinetta with a huge V6 voice and instant electric response.</p><div class="specs"><span>819 hp</span><span>2.9s 0–60</span></div></div>
         </article>
-
         <article class="car-card featured">
-          <div class="car-image">
-            <img src="../images/2.jpg" alt="Porsche sports car" onerror="this.parentElement.classList.add('image-fallback');this.remove()">
-            <span>02</span>
-          </div>
-          <div class="card-content">
-            <p class="eyebrow">Porsche · Germany</p>
-            <h3>Porsche 911 GT3 RS</h3>
-            <p>A street-legal track weapon where downforce, balance, and a screaming flat-six meet.</p>
-            <div class="specs">
-              <span>518 hp</span>
-              <span>3.0s 0–60</span>
-            </div>
-          </div>
+          <div class="car-image"><img src="images/2.jpg" alt="Porsche sports car" onerror="this.parentElement.classList.add('image-fallback');this.remove()"><span>02</span></div>
+          <div class="card-content"><p class="eyebrow">Porsche · Germany</p><h3>Porsche 911 GT3 RS</h3><p>A street-legal track weapon where downforce, balance, and a screaming flat-six meet.</p><div class="specs"><span>518 hp</span><span>3.0s 0–60</span></div></div>
         </article>
-
         <article class="car-card">
-          <div class="car-image">
-            <img src="../images/3.jpg" alt="Supercar on a road" onerror="this.parentElement.classList.add('image-fallback');this.remove()">
-            <span>03</span>
-          </div>
-          <div class="card-content">
-            <p class="eyebrow">Supercar · Future</p>
-            <h3>McLaren 750S</h3>
-            <p>Featherweight carbon fibre and a twin-turbo V8 make every corner feel like a launch.</p>
-            <div class="specs">
-              <span>740 hp</span>
-              <span>2.7s 0–60</span>
-            </div>
-          </div>
+          <div class="car-image"><img src="images/3.jpg" alt="Supercar on a road" onerror="this.parentElement.classList.add('image-fallback');this.remove()"><span>03</span></div>
+          <div class="card-content"><p class="eyebrow">Supercar · Future</p><h3>McLaren 750S</h3><p>Featherweight carbon fibre and a twin-turbo V8 make every corner feel like a launch.</p><div class="specs"><span>740 hp</span><span>2.7s 0–60</span></div></div>
         </article>
       </div>
     </section>
 
     <section class="experience section" id="experience">
       <div class="container experience-grid">
-        <div>
-          <p class="eyebrow">Beyond numbers</p>
-          <h2>Built for the<br><em>heartbeat.</em></h2>
-        </div>
-        <div class="experience-copy">
-          <p>Supercars are not only fast. They are the feel of a steering wheel, the vibration of a cold start, and the moment a road opens in front of you.</p>
-          <div class="stats">
-            <div><strong>01</strong><span>Choose your line</span></div>
-            <div><strong>02</strong><span>Find your sound</span></div>
-            <div><strong>03</strong><span>Make it yours</span></div>
-          </div>
-        </div>
+        <div><p class="eyebrow">Beyond numbers</p><h2>Built for the<br><em>heartbeat.</em></h2></div>
+        <div class="experience-copy"><p>Supercars are not only fast. They are the feel of a steering wheel, the vibration of a cold start, and the moment a road opens in front of you.</p><div class="stats"><div><strong>01</strong><span>Choose your line</span></div><div><strong>02</strong><span>Find your sound</span></div><div><strong>03</strong><span>Make it yours</span></div></div></div>
       </div>
     </section>
+
+    <section class="section selector-section container" id="selector">
+      <div class="section-heading"><div><p class="eyebrow">Dream garage calculator</p><h2>What would<br><em>you buy?</em></h2></div><p>Tell us your budget and we will match you with the closest dream machine.</p></div>
+      <form class="selector-form" id="car-form">
+        <label for="budget">Your budget (USD)</label>
+        <div class="form-row"><input id="budget" type="number" min="0" step="1000" placeholder="100000" required><button class="button button-primary" type="submit">Find my car →</button></div>
+        <p class="result" id="result" aria-live="polite">Enter a budget to receive your match.</p>
+      </form>
+    </section>
   </main>
-
-  <footer class="footer">
-    <div class="container">
-      <span>VELOCITY<span class="accent">.</span> Built for the bold.</span>
-      <a href="../index.html">View Final Project</a>
-    </div>
-  </footer>
-
+  <footer class="footer"><div class="container"><span>VELOCITY<span class="accent">.</span> Built for the bold.</span><a href="#home">Back to top ↑</a></div></footer>
 </body>
 </html>
-
